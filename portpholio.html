@@ -10,168 +10,186 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */*,::after,::before{box-sizing:border-box}html{-moz-tab-size:4;tab-size:4}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'}hr{height:0;color:inherit}abbr[title]{text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Portpholio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./portpholio.html" class="logo link"
-          ><span style="color: #2196f3">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li><a href="./index.html" class="header-nav link hov">Студія</a></li>
-          <li><a href="./portpholio.html" class="current header-nav hov">Портфоліо</a></li>
-          <li><a href="#" class="header-nav link hov">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li><a href="mailto:info@devstudio.com" class="link tel hov">info@devstudio.com</a></li>
-        <li><a href="tel:+38096111111" class="link tel hov">+38096111111</a></li>
-      </ul>
+    <header class="header-position">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./portpholio.html" class="logo link"
+            ><span style="color: #2196f3">Web</span>Studio</a
+          >
+          <ul class="list header-list">
+            <li><a href="./index.html" class="header-nav link hov">Студія</a></li>
+            <li><a href="./portpholio.html" class="current header-nav hov">Портфоліо</a></li>
+            <li><a href="#" class="header-nav link hov">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header-connect">
+          <ul class="list tel header-tel">
+            <li><a href="mailto:info@devstudio.com" class="link tel hov">info@devstudio.com</a></li>
+            <li><a href="tel:+38096111111" class="link tel hov">+38096111111</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h1 class="visually-hidden">Наші роботи</h1>
-        <ul class="list">
-          <li>
-            <button type="button" class="nav-btn link">Усі</button>
-          </li>
-          <li>
-            <button type="button" class="nav-btn link">Веб-сайти</button>
-          </li>
-          <li>
-            <button type="button" class="nav-btn link">Додатки</button>
-          </li>
-          <li>
-            <button type="button" class="nav-btn link">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="nav-btn link">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="list">
-          <li>
-            <a href="./portpholio.html" class="link">
-              <img src="./img_portpholio/ноутбук.jpg" width="370" alt="ноутбук" />
-              <div class="card-bcg">
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="teem-p">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/баскетбол.jpg" width="370" alt="баскетбол" />
+      <section class="container">
+        <div class="btns-portpholio">
+          <h1 class="visually-hidden">Наші роботи</h1>
+          <ul class="list">
+            <li class="btn-item">
+              <button type="button" class="nav-btn link">Усі</button>
+            </li>
+            <li class="btn-item">
+              <button type="button" class="nav-btn link">Веб-сайти</button>
+            </li>
+            <li class="btn-item">
+              <button type="button" class="nav-btn link">Додатки</button>
+            </li>
+            <li class="btn-item">
+              <button type="button" class="nav-btn link">Дизайн</button>
+            </li>
+            <li class="btn-item">
+              <button type="button" class="nav-btn link">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+        <div class="portpholio">
+          <ul class="list portpholio">
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <img src="./img_portpholio/ноутбук.jpg" width="370" alt="ноутбук" />
                 <div class="card-bcg">
-                  <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="teem-p">Дизайн</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/риба.jpg" width="370" alt="риба" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Ресторан Seafood</h2>
-                  <p class="teem-p">Додаток</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/навушники.jpg" width="370" alt="навушники" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Проєкт Prime</h2>
-                  <p class="teem-p">Маркетинг</p>
-                </div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/коробки.jpg" width="370" alt="коробки" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Проєкт Boxes</h2>
-                  <p class="teem-p">Додаток</p>
-                </div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/монітор.jpg" width="370" alt="монітор" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <h2 class="portfolio-title">Технокряк</h2>
                   <p class="teem-p">Веб-сайт</p>
                 </div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/книжка.jpg" width="370" alt="книжка" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Видання Limited Edition</h2>
-                  <p class="teem-p">Дизайн</p>
+              </a>
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/баскетбол.jpg" width="370" alt="баскетбол" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                    <p class="teem-p">Дизайн</p>
+                  </div>
                 </div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/бейджик.jpg" width="370" alt="бейджик" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Проєкт LAB</h2>
-                  <p class="teem-p">Маркетинг</p>
+              </a>
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/риба.jpg" width="370" alt="риба" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Ресторан Seafood</h2>
+                    <p class="teem-p">Додаток</p>
+                  </div>
                 </div>
-              </div></a
-            >
-          </li>
-          <li>
-            <a href="./portpholio.html" class="link">
-              <div>
-                <img src="./img_portpholio/ноутбук_.jpg" width="370" alt="ноутбук" />
-                <div class="card-bcg">
-                  <h2 class="portfolio-title">Growing Business</h2>
-                  <p class="teem-p">Додаток</p>
-                </div>
-              </div></a
-            >
-          </li>
-        </ul>
+              </a>
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/навушники.jpg" width="370" alt="навушники" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Проєкт Prime</h2>
+                    <p class="teem-p">Маркетинг</p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/коробки.jpg" width="370" alt="коробки" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Проєкт Boxes</h2>
+                    <p class="teem-p">Додаток</p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/монітор.jpg" width="370" alt="монітор" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                    <p class="teem-p">Веб-сайт</p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/книжка.jpg" width="370" alt="книжка" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Видання Limited Edition</h2>
+                    <p class="teem-p">Дизайн</p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/бейджик.jpg" width="370" alt="бейджик" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Проєкт LAB</h2>
+                    <p class="teem-p">Маркетинг</p>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li class="link-border">
+              <a href="./portpholio.html" class="link">
+                <div>
+                  <img src="./img_portpholio/ноутбук_.jpg" width="370" alt="ноутбук" />
+                  <div class="card-bcg">
+                    <h2 class="portfolio-title">Growing Business</h2>
+                    <p class="teem-p">Додаток</p>
+                  </div>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <address class="foot-st">
-        <a href="./portpholio.html" class="logo link"
-          ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
-        >
-        <ul class="list link">
-          <li>
-            <a
-              href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              class="link hov adress"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link foot-tel hov">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+38096111111" class="link foot-tel hov">+38096111111</a></li>
-        </ul>
-      </address>
+    <footer class="footer-position">
+      <div class="container">
+        <div class="container-footer-logo">
+          <a href="./index.html" class="logo link"
+            ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
+          >
+        </div>
+        <address>
+          <ul class="list link">
+            <li>
+              <a
+                href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link adress"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="item-mail">
+              <a href="mailto:info@devstudio.com" class="link tel">info@devstudio.com </a>
+            </li>
+            <li>
+              <a href="tel:+38096111111" class="link tel">+38096111111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

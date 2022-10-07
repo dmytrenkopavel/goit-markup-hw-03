@@ -6,6 +6,28 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--main-bcg-color);
+  width: 1600px;
+}
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 :root {
   --blue-color: #2196f3;
@@ -13,6 +35,7 @@ body {
   --text-color: #757575;
   --main-bcg-color: #ffffff;
 }
+/* ---------------------header----------------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,8 +48,32 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.header-position {
+  padding-bottom: 106px;
+}
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+.header-connect {
+  margin-left: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid tomato; */
+}
 .card-bcg {
   background-color: var(--main-bcg-color);
+  margin: 20px 24px;
 }
 .list {
   list-style: none;
@@ -47,13 +94,21 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-right: 93px;
 }
+
 .header-nav {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.header-tel {
+  display: flex;
+  gap: 50px;
 }
 .tel {
   font-weight: 500;
@@ -68,14 +123,21 @@ body {
   line-height: 1.71;
   color: var(--main-bcg-color);
 }
+
+/* ---------------------hero----------------- */
 .hero {
   background: #2f303a;
+  height: 600px;
 }
 .main-title {
+  margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  padding-top: 200px;
+  padding-left: 237px;
+  padding-right: 237px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-bcg-color);
@@ -87,10 +149,16 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
+  padding: 10px 32px;
+  margin-top: 30px;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background: var(--blue-color);
   color: var(--main-bcg-color);
+}
+.box-btn {
+  text-align: center;
 }
 .nav-btn {
   font-family: inherit;
@@ -102,8 +170,34 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.btns-portpholio {
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.btn-item {
+  display: inline-block;
+}
+/* ---------------------advantage----------------- */
+.advantage-position {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.advantage-list {
+  display: flex;
+  gap: 30px;
+}
+.item {
+  width: 270px;
 }
 .advantage-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -114,6 +208,13 @@ body {
 .advantage-text {
   line-height: 1.71;
   color: var(--text-color);
+}
+/* ---------------------jobs----------------- */
+.jobs {
+  padding-bottom: 44px;
+}
+.jobs > ul > li {
+  display: inline-block;
 }
 .visually-hidden {
   position: absolute;
@@ -127,8 +228,27 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* ---------------------bcg-teem----------------- */
 .bcg-teem {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 44px;
+}
+
+.person-list {
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.person-list > h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.person-list > p {
+  margin-bottom: 30px;
 }
 .title {
   font-weight: 500;
@@ -144,6 +264,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 50px;
+}
+.portpholio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-top: -20px;
+  padding-bottom: 84px;
 }
 .portfolio-title {
   font-weight: 700;
@@ -151,21 +279,37 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.link-border {
+  border: 1px solid #eeeeee;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .teem-p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 20px;
 }
-.foot-st {
+/* ---------------------footer----------------- */
+.footer-position {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.foot-tel {
-  font-size: 14px;
-  line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+.container-footer-logo {
+  margin-bottom: 20px;
 }
+
+.item-mail {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
 .adress {
   font-size: 14px;
   line-height: 1.71;
