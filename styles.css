@@ -1,12 +1,9 @@
 body {
   font-family: roboto, sans-serif;
   font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--main-bcg-color);
-  width: 1600px;
 }
 * {
   box-sizing: border-box;
@@ -28,6 +25,7 @@ ol {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 :root {
   --blue-color: #2196f3;
@@ -48,12 +46,16 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header-position {
+.header {
   padding-bottom: 106px;
 }
 .header-list {
   display: flex;
   gap: 50px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-connect {
   margin-left: auto;
@@ -61,8 +63,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
 }
 .container {
   width: 1200px;
@@ -71,10 +72,7 @@ img {
   margin: 0 auto;
   /* outline: 1px solid tomato; */
 }
-.card-bcg {
-  background-color: var(--main-bcg-color);
-  margin: 20px 24px;
-}
+
 .list {
   list-style: none;
 }
@@ -97,14 +95,14 @@ img {
   margin-right: 93px;
 }
 
-.header-nav {
+.header-link {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  padding: 32px 0;
+  display: block;
 }
 .header-tel {
   display: flex;
@@ -127,25 +125,23 @@ img {
 /* ---------------------hero----------------- */
 .hero {
   background: #2f303a;
-  height: 600px;
+  padding: 200px 0;
+  text-align: center;
 }
 .main-title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  padding-top: 200px;
-  padding-left: 237px;
-  padding-right: 237px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
   color: var(--main-bcg-color);
 }
 .btn {
   cursor: pointer;
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -154,9 +150,11 @@ img {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   background: var(--blue-color);
   color: var(--main-bcg-color);
 }
+
 .box-btn {
   text-align: center;
 }
@@ -176,17 +174,16 @@ img {
 }
 
 .btns-portpholio {
-  text-align: center;
-  padding-bottom: 34px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.btn-item {
-  display: inline-block;
-}
 /* ---------------------advantage----------------- */
 .advantage-position {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantage-list {
   display: flex;
@@ -211,7 +208,7 @@ img {
 }
 /* ---------------------jobs----------------- */
 .jobs {
-  padding-bottom: 44px;
+  padding-bottom: 94px;
 }
 .jobs > ul > li {
   display: inline-block;
@@ -233,7 +230,6 @@ img {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: 44px;
 }
 
 .person-list {
@@ -243,13 +239,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.person-list > h3 {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.name-person {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.person-list > p {
-  margin-bottom: 30px;
-}
+
 .title {
   font-weight: 500;
   font-size: 16px;
@@ -269,9 +263,8 @@ img {
 .portpholio {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -20px;
-  margin-top: -20px;
-  padding-bottom: 84px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .portfolio-title {
   font-weight: 700;
@@ -279,21 +272,26 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 .link-border {
-  border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.main-sect {
+  padding-bottom: 84px;
+}
+.card-bcg {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
 .teem-p {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 10px;
   color: var(--text-color);
-  margin-bottom: 20px;
 }
 /* ---------------------footer----------------- */
 .footer-position {
@@ -305,9 +303,11 @@ img {
   margin-bottom: 20px;
 }
 
-.item-mail {
-  margin-top: 9px;
+.footer-item {
   margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 .adress {
